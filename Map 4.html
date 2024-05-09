@@ -56,20 +56,27 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        section {
-            padding: 20px;
-        }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 1px;
+            position: sticky; /* Fixed position ensures it stays at the bottom */
+            bottom: 0; /* Aligns the footer to the bottom of the viewport */
+            width: 100%; /* Makes the footer span the entire width of the viewport */
         }
         html {
             scroll-behavior: smooth;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%; /* Ensure images don't exceed container width */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -78,7 +85,7 @@
         <h1>Sam Layton Portfolio</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="Home.html">Home</a>
         <a href="About.html">About</a>
         <div class="dropdown">
             <a href="Portfolio.html" class="dropbtn">Portfolio</a>
@@ -93,7 +100,10 @@
     </nav>
     <section id="Map 4">
         <h2>Map 4</h2>
-        <p>My Name is Sam Layton and this is my fortfolio website.</p>
+        <p>The last map I completed is the reference map which I used the Mallacoota bushfires again to model my map off.</p>
+        <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------ </p>
+        <p>The map is shown here.</p>
+        <img src="Picture1.jpg" alt="Map 4">
     </section>
     <footer>
         <p>&copy; 2024 Sam Layton Portfolio</p>
